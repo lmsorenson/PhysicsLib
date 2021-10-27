@@ -1,0 +1,4 @@
+add_subdirectory(Private)
+
+# PRIVATE_SOURCE private source files.
+SET(SOURCE_INCLUDES ${SOURCE_INCLUDES} ${PRIVATE_SOURCE} PARENT_SCOPE)

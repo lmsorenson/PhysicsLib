@@ -10,6 +10,8 @@ add_subdirectory(src ${PROJECT_BINARY_DIR}/src/)
 add_subdirectory(libs ${PROJECT_BINARY_DIR}/libs/)
 add_subdirectory(tests ${PROJECT_BINARY_DIR}/tests/)
 
+SET(TGT_SOURCES ${TGT_SOURCES} ${SOURCE_INCLUDES})
+
 add_library(physics ${TGT_SOURCES} ${TGT_INCLUDES})
 
 target_include_directories(physics
