@@ -1,0 +1,5 @@
+add_subdirectory(googletest ${PROJECT_BINARY_DIR}/googletest/)
+SET(GTEST_INCLUDES ${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+
+# SUBMODULE_INCLUDES private source files.
+SET(SUBMODULE_INCLUDES ${SUBMODULE_INCLUDES} ${GTEST_INCLUDES} PARENT_SCOPE)
