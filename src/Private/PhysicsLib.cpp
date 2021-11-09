@@ -1,12 +1,18 @@
 #include <PhysicsLib.h>
-#include <iostream>
+#include <cmath>
 
-double free_fall_distance(double t, Velocity v, double g)
+double free_fall_distance(double t, Velocity v, double a)
 {
-    std::cout << "Hello World!" << std::endl;
+    /// Calculate distance
+    double d = v.direction.z * t + 0.5 * a * pow(t, 2);
+
+    return d;
 }
 
-double velocity_at_time_interval(double t, Velocity v, double g)
+double velocity_at_time_interval(double t, Velocity v, double a)
 {
-    std::cout << "Hello World!" << std::endl;
+    /// Calculate final velocity.
+    double vF = v.direction.z + a * t;
+
+    return vF;
 }
