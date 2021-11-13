@@ -22,7 +22,7 @@ Vector Vector::normalized() const
     if (length == 0)
         return {0};
 
-    /// normalized vector devides all components by their length.
+    /// To normalize a vector divide all vector components by the vector length.
     return {x_ / length, y_ / length, z_ / length};
 }
 
