@@ -1,8 +1,16 @@
 #pragma once
 #include "Vector.h"
 
-struct Velocity
+class Velocity
 {
-    double magnitude;
-    Vector direction;
+public:
+    Velocity();
+    Velocity(double m, Vector d);
+
+    double magnitude() const;
+    Vector direction() const;
+
+private:
+    double magnitude_;
+    Vector direction_;
 };
