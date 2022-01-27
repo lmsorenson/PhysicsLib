@@ -19,4 +19,4 @@ double free_fall_distance(double t, Velocity v = {}, double a = -9.81);
 /// \param v The initial velocity of the object. (m/s)
 /// \param g The acceleration due to gravity. (m/s^2)
 /// \return The projected velocity an object would be traveling after a given amount of time.
-double velocity_at_time_interval(double t, Velocity v = {}, double a = -9.81);
+Velocity velocity_at_time_interval(double t, Velocity v = {}, double a = -9.81);

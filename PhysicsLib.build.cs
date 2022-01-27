@@ -17,8 +17,8 @@ public class PhysicsLib : ModuleRules
         else if (Target.Platform == UnrealTargetPlatform.Mac)
         {
             PublicDefinitions.Add("WITH_PHYSICSLIB=1");
-            PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "../../Libraries/PhysicsLib/include"));
-            PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "../../Libraries/PhysicsLib/bin/", "libphysics.a"));
+            PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "include"));
+            PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "bin", "libphysics.a"));
         }
         else
         {

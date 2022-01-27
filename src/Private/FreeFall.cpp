@@ -12,13 +12,15 @@ double free_fall_distance(double t, Velocity v, double a)
     return d;
 }
 
-double velocity_at_time_interval(double t, Velocity v, double a)
+Velocity velocity_at_time_interval(double t, Velocity v, double a)
 {
     double initial_velocity = v.direction().z() * v.magnitude();
 
-    /// Calculate final velocity.
+    /// Calculate the magnitude of final velocity.
     /// vf = vi + a * t
-    double vF = initial_velocity + a * t;
+    double v_f = initial_velocity + a * t;
 
-    return vF;
+    double m = abs(v_f);
+
+    return { m, Vector( 0, 0, v_f)};
 }

@@ -6,8 +6,8 @@ public:
     Vector(double m);
     Vector(double x, double y, double z);
 
-    Vector normalized() const;
-    double length() const;
+    [[nodiscard]] Vector normalized() const;
+    [[nodiscard]] double length() const;
     [[nodiscard]] double x() const, y() const, z() const;
 
 private:
