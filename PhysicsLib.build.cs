@@ -11,8 +11,8 @@ public class PhysicsLib : ModuleRules
         if (Target.Platform == UnrealTargetPlatform.Win32 || Target.Platform == UnrealTargetPlatform.Win64)
         {
             PublicDefinitions.Add("WITH_PHYSICSLIB=1");
-            PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "../../Libraries/PhysicsLib/include"));
-            PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "../../Libraries/PhysicsLib/bin/Release", "Physics.Lib"));
+            PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "include"));
+            PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "bin", "Release", "physics.lib"));
         }
         else if (Target.Platform == UnrealTargetPlatform.Mac)
         {
